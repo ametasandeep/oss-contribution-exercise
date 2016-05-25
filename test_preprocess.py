@@ -7,7 +7,7 @@ import preprocess
 def test_center():
     # After centering, mean should be the desired mean and the
     # standard deviation should be unchanged
-    test_data = np.array([1, 3, 5, 7])
+    test_data = np.array([1,3,5,7])
 
     centered = preprocess.center(test_data)
     assert_almost_equal(centered.mean(), 0)
